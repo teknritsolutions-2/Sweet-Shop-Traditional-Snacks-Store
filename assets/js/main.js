@@ -39,12 +39,12 @@ const desktopUtilities = header.querySelector('.header-end');
 const drawerUtilities = header.querySelector('.drawer-utilities');
 let previousFocus;
 function moveUtilities() {
-  const target = innerWidth < 1100 ? drawerUtilities : desktopUtilities;
+  const target = innerWidth < 1280 ? drawerUtilities : desktopUtilities;
   if (utilities.parentElement !== target) target.prepend(utilities);
-  nav.inert = innerWidth < 1100 && !header.classList.contains('drawer-open');
+  nav.inert = innerWidth < 1280 && !header.classList.contains('drawer-open');
 }
 function setDrawer(open) {
-  nav.inert = !open && innerWidth < 1100;
+  nav.inert = !open && innerWidth < 1280;
   header.classList.toggle('drawer-open', open);
   menu.setAttribute('aria-expanded', String(open));
   document.body.style.overflowY = open ? 'hidden' : '';
@@ -58,7 +58,7 @@ menu.addEventListener('click', () => setDrawer(true));
 header.querySelector('.close-menu').addEventListener('click', () => setDrawer(false));
 header.querySelector('.scrim').addEventListener('click', () => setDrawer(false));
 addEventListener('resize', () => {
-  if (innerWidth >= 1100 && header.classList.contains('drawer-open')) setDrawer(false);
+  if (innerWidth >= 1280 && header.classList.contains('drawer-open')) setDrawer(false);
   moveUtilities();
 });
 const home = header.querySelector('.home-menu');
@@ -69,9 +69,9 @@ function toggleHome(open) {
   homeButton.setAttribute('aria-expanded', String(open));
 }
 homeButton.addEventListener('click', () => { homePinned = !homePinned; toggleHome(homePinned); });
-home.addEventListener('mouseenter', () => { if (innerWidth >= 1100) toggleHome(true); });
-home.addEventListener('mouseleave', () => { if (innerWidth >= 1100 && !homePinned) toggleHome(false); });
-home.addEventListener('focusin', () => { if (innerWidth >= 1100) toggleHome(true); });
+home.addEventListener('mouseenter', () => { if (innerWidth >= 1280) toggleHome(true); });
+home.addEventListener('mouseleave', () => { if (innerWidth >= 1280 && !homePinned) toggleHome(false); });
+home.addEventListener('focusin', () => { if (innerWidth >= 1280) toggleHome(true); });
 home.addEventListener('focusout', event => {
   if (!home.contains(event.relatedTarget)) { homePinned = false; toggleHome(false); }
 });
@@ -129,7 +129,7 @@ document.querySelectorAll('[data-anatomy]').forEach(button => {
 const heroArt = document.querySelector('.hero-art');
 if (heroArt && matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
   heroArt.addEventListener('pointermove', event => {
-    if (innerWidth < 1100) return;
+    if (innerWidth < 1280) return;
     const bounds = heroArt.getBoundingClientRect();
     heroArt.style.setProperty('--tilt-x', ((.5 - (event.clientY - bounds.top) / bounds.height) * 5) + 'deg');
     heroArt.style.setProperty('--tilt-y', (((event.clientX - bounds.left) / bounds.width - .5) * 5) + 'deg');

@@ -39,7 +39,7 @@ function check(name, pass, details) {
     for (const [device, width] of [['desktop', 1440], ['tablet', 820], ['mobile', 390]]) {
       await page.setViewportSize({ width, height: 1000 });
       await visit(url);
-      if (width < 1100) check(name + ' ' + device + ' closed drawer invisible', !await page.locator('header nav').isVisible());
+      if (width < 1280) check(name + ' ' + device + ' closed drawer invisible', !await page.locator('header nav').isVisible());
       await shot(name + '-' + device);
       check(name + ' ' + device + ' photos load', await page.evaluate(() => [...document.images].every(image => image.naturalWidth > 0)));
       check(name + ' ' + device + ' fonts loaded', await page.evaluate(async () => {
@@ -85,6 +85,17 @@ function check(name, pass, details) {
   await shot('home1-dark-rtl');
   await page.locator('.rtl').click();
   await page.locator('.theme').click();
+  const aligned = await page.evaluate(() => {
+    const header = document.querySelector('.header-inner').getBoundingClientRect();
+    const nav = document.querySelector('.site-header nav').getBoundingClientRect();
+    const footer = document.querySelector('.footer-inner').getBoundingClientRect();
+    const content = document.querySelector('.categories').getBoundingClientRect();
+    return { centered: Math.abs(nav.x + nav.width / 2 - (header.x + header.width / 2)) < 1, gutters: header.x === content.x && footer.x === content.x && header.width === content.width && footer.width === content.width };
+  });
+  check('Navigation centered across the overall page', aligned.centered);
+  check('Header footer and sections share gutters', aligned.gutters);
+  check('Familiar Flavors uses the same section gutters', await page.evaluate(() => document.querySelector('.tradition').getBoundingClientRect().x === document.querySelector('.header-inner').getBoundingClientRect().x));
+  check('Mithloya branding visible in header and footer', await page.locator('.logo .brand-name').textContent() === 'Mithloya' && await page.locator('.footer-brand .brand-name').textContent() === 'Mithloya');
   const order = await page.locator('.header-end').evaluate(element => [...element.querySelectorAll('button, a')].map(node => node.className));
   check('Desktop utility order: theme, RTL, bag, shop', /theme/.test(order[0]) && /rtl/.test(order[1]) && /cart-link/.test(order[2]) && /button/.test(order[3]), order);
   check('Empty bag badge hidden', !await page.locator('.cart-count').isVisible());
@@ -125,6 +136,7 @@ function check(name, pass, details) {
     check('Contextual related products for category at ' + id, categoryMatch && related.length === (id === 14 ? 3 : 4), related);
   }
   await visit('pages/products.html');
+  check('Product photographs show full subject', await page.locator('.product-image img').evaluateAll(images => images.every(image => getComputedStyle(image).objectFit === 'contain')));
   check('All 24 product records preserved', await page.locator('.product-card').count() === 24);
   await page.locator('[data-category="Savories"]').click();
   check('Category filter', await page.locator('.product-card').count() === 6);
@@ -136,6 +148,10 @@ function check(name, pass, details) {
   await page.locator('#sort').selectOption('low');
   check('Price sorting', await page.locator('.product-card h3').first().textContent() === 'Banana Chips');
   await page.locator('.product-card[data-product-id="0"] input').fill('2');
+  await page.locator('.product-card[data-product-id="0"] [data-step="1"]').click();
+  check('Card plus increases quantity', await page.locator('.product-card[data-product-id="0"] input').inputValue() === '3');
+  await page.locator('.product-card[data-product-id="0"] [data-step="-1"]').click();
+  check('Card minus decreases quantity', await page.locator('.product-card[data-product-id="0"] input').inputValue() === '2');
   await page.locator('[data-add="0"]').click();
   await page.locator('[data-add="1"]').click();
   check('Bag badge displays nonzero quantity', await page.locator('.cart-count').textContent() === '3' && await page.locator('.cart-count').isVisible());
@@ -212,7 +228,7 @@ function check(name, pass, details) {
   await page.locator('[data-enquiry-mode="bulk"]').click();
   check('Switching modes preserves editable values', await page.locator('[name="city"]').inputValue() === 'Hyderabad' && await page.locator('[name="packaging"]').inputValue() === 'Hamper');
   for (const [name, url, width] of [['about-dark-tablet', 'pages/about.html', 820], ['contact-bulk-dark-mobile', 'pages/contact.html?enquiry=bulk', 390], ['products-dark-desktop', 'pages/products.html', 1440]]) {
-    await page.setViewportSize({ width, height: 1000 }); await visit(url); await page.locator('.menu-toggle').evaluate(button => { if (innerWidth < 1100) button.click(); }); await page.locator('.theme').click(); await page.keyboard.press('Escape'); await shot(name);
+    await page.setViewportSize({ width, height: 1000 }); await visit(url); await page.locator('.menu-toggle').evaluate(button => { if (innerWidth < 1280) button.click(); }); await page.locator('.theme').click(); await page.keyboard.press('Escape'); await shot(name);
     const colors = await page.locator('main').evaluate(element => ({ text: getComputedStyle(element).color, background: getComputedStyle(document.body).backgroundColor }));
     check(name + ' neutral light text on dark background', colors.text === 'rgb(250, 247, 240)' && colors.background === 'rgb(24, 25, 29)');
     await page.evaluate(() => localStorage.setItem('sweet-theme', 'light'));

@@ -23,3 +23,11 @@ Visual review caught a responsive drawer transition flash that the original over
 ## Limits
 
 The photography is genuine and licensed, with public attribution. Gift photographs are labeled as assortment inspiration because exact client packaging is unverified; no package specifications are claimed from the photographs. The site remains frontend-only: enquiry delivery, payments, approved commercial pricing, inventory and fulfilment are not represented as operational.
+
+## Branding and final layout refinement
+
+After the client clarified the naming instruction, the original identity **Mithloya** was added to the header, footer and page titles. The symbol remains consistent. Shared container gutters now govern navigation and footer, while desktop navigation is independently centered. Header collapse occurs before controls become crowded.
+
+Latest browser run: **165 / 165 checks passed**, with the same **660** all-page responsive/theme/direction cases and no JavaScript exceptions. New checks verify exact navigation centering, equal header/footer/section gutters, visible brand text, full-subject product photo rendering, and quantity increment/decrement behavior. Card quantities retain direct numeric input but replace browser spinner arrows with explicit aligned minus/plus buttons. Bulk and gift photos use natural dimensions to remove artificial white bars. The Familiar Flavors section uses compact vertical spacing and naturally proportioned photography.
+
+The Familiar Flavors photograph was pulled to the page edge by a legacy `margin: 0` rule overriding its container margins. That rule was removed, and an explicit gutter-alignment assertion now covers the section.

@@ -417,6 +417,22 @@
       "pass": true
     },
     {
+      "name": "Navigation centered across the overall page",
+      "pass": true
+    },
+    {
+      "name": "Header footer and sections share gutters",
+      "pass": true
+    },
+    {
+      "name": "Familiar Flavors uses the same section gutters",
+      "pass": true
+    },
+    {
+      "name": "Mithloya branding visible in header and footer",
+      "pass": true
+    },
+    {
       "name": "Desktop utility order: theme, RTL, bag, shop",
       "pass": true,
       "details": [
@@ -530,6 +546,10 @@
       ]
     },
     {
+      "name": "Product photographs show full subject",
+      "pass": true
+    },
+    {
       "name": "All 24 product records preserved",
       "pass": true
     },
@@ -547,6 +567,14 @@
     },
     {
       "name": "Price sorting",
+      "pass": true
+    },
+    {
+      "name": "Card plus increases quantity",
+      "pass": true
+    },
+    {
+      "name": "Card minus decreases quantity",
       "pass": true
     },
     {
@@ -673,15 +701,15 @@
       "status": 200
     },
     {
-      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2",
-      "status": 200
-    },
-    {
       "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
       "status": 200
     },
     {
       "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2",
+      "status": 200
+    },
+    {
+      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFhOHM81r4j6k0gjAW3mujVU2B2G_VB0PD2xWr53A.woff2",
       "status": 200
     },
     {
