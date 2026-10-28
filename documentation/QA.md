@@ -49,3 +49,7 @@ Replaced the dark split banner with a light editorial hero, a shorter heading, a
 ## Store-name refinement
 
 Current identity: **Mithmora — Sweets & Snacks**. Updated the shared header/footer identity, page titles and dynamic product title, with a compact descriptive line beneath the wordmark. Brand presence and overflow were checked across all fourteen pages at 320px and 1440px (28 page/viewport checks). Static link/font validation and JavaScript syntax checks also passed.
+
+## Selected brand
+
+The selected storefront name is **Mithola — Sweets & Snacks**. Updated header/footer lockups, page titles, dynamic product titles and the catalog asset version. Branding and header overflow checked across fourteen pages at desktop and narrow mobile widths.
