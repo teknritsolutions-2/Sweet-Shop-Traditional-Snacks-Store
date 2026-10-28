@@ -2,7 +2,7 @@ window.productCard = product => `
 <article class="product-card" data-product-id="${product.id}">
   <a class="product-image" href="${storePath}pages/product-details.html?id=${product.id}">
     <img src="${storePath + product.image}" alt="${product.imageAlt || product.name}" loading="lazy">
-    ${product.category === 'Gift Boxes' ? '<span class="assortment-tag">Assortment inspiration</span>' : [0, 1, 3].includes(product.id) ? '<span class="tag">A TIMELESS FAVORITE</span>' : ''}
+    ${[0, 1, 3].includes(product.id) ? '<span class="tag">A TIMELESS FAVORITE</span>' : ''}
   </a>
   <div class="product-info">
     <p class="eyebrow">${product.category} · ${product.pack}</p>
