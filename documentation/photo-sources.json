@@ -293,5 +293,16 @@
     ],
     "local": "assets/images/katli-detail.jpg",
     "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "cashews-landscape",
+    "file": "Cashew nuts - 1.jpg",
+    "author": "Mauro Cateb",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "source": "https://commons.wikimedia.org/wiki/File:Cashew_nuts_-_1.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cashew_nuts_-_1.jpg",
+    "changes": "Resized and cropped into a 4:3 catalog derivative."
   }
 ]

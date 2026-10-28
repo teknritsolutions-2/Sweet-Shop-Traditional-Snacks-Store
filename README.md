@@ -8,7 +8,7 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory and open 
 
 ## Content and ordering
 
-Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. Gift photography is labeled as assortment inspiration; it is not presented as verified store packaging. Mithloya is the original brand name created for this project at the client’s request. No address, hours, phone number, certifications, ratings or payment claims are invented.
+Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. Gift photography is labeled as assortment inspiration; it is not presented as verified store packaging. Saanvoya is the original brand name created for this project at the client’s request. No address, hours, phone number, certifications, ratings or payment claims are invented.
 
 The cart uses browser localStorage. Enquiry form modes validate details, provide a review and download a plain-text request. They do not transmit data, process payments or confirm orders. Add real store contact destinations and an appropriate submission service before enabling online enquiry delivery.
 
@@ -37,3 +37,7 @@ Deploy root `index.html`, `pages/`, `assets/`, `robots.txt`, `sitemap.xml` and `
 ## Photography
 
 All food images are real photographs, not AI images. See the public Photo credits page for linked licenses and attribution. Resized, compressed and cropped image derivatives remain under their respective licenses. No endorsement by the photographers or photographed businesses is implied. Google Fonts provides DM Serif Display and Manrope with system font fallbacks when offline.
+
+## Uniform photography
+
+Catalog photographs use locally prepared 1200 × 900 (4:3) derivatives, with no image padding or letterboxing. Originals and their licenses remain available. Install the optional image tool with `python3 -m pip install -r scripts/requirements-images.txt`, then run `python3 scripts/prepare-catalog-images.py` to regenerate the cards. Source-to-derivative mappings are in `documentation/catalog-image-map.json`.

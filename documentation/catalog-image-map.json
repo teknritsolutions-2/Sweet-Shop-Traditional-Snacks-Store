@@ -1,0 +1,170 @@
+[
+  {
+    "id": 0,
+    "source": "assets/images/0.jpg",
+    "derivative": "assets/images/catalog/0.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 1,
+    "source": "assets/images/1.jpg",
+    "derivative": "assets/images/catalog/1.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 2,
+    "source": "assets/images/2.jpg",
+    "derivative": "assets/images/catalog/2.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 3,
+    "source": "assets/images/3.jpg",
+    "derivative": "assets/images/catalog/3.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 4,
+    "source": "assets/images/4.jpg",
+    "derivative": "assets/images/catalog/4.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 5,
+    "source": "assets/images/5.jpg",
+    "derivative": "assets/images/catalog/5.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 6,
+    "source": "assets/images/6.jpg",
+    "derivative": "assets/images/catalog/6.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 7,
+    "source": "assets/images/7.jpg",
+    "derivative": "assets/images/catalog/7.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 8,
+    "source": "assets/images/8.jpg",
+    "derivative": "assets/images/catalog/8.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 9,
+    "source": "assets/images/9.jpg",
+    "derivative": "assets/images/catalog/9.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 10,
+    "source": "assets/images/10.jpg",
+    "derivative": "assets/images/catalog/10.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 11,
+    "source": "assets/images/11.jpg",
+    "derivative": "assets/images/catalog/11.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 12,
+    "source": "assets/images/12.jpg",
+    "derivative": "assets/images/catalog/12.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 13,
+    "source": "assets/images/13.jpg",
+    "derivative": "assets/images/catalog/13.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 14,
+    "source": "assets/images/14.jpg",
+    "derivative": "assets/images/catalog/14.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 15,
+    "source": "assets/images/cashews-landscape.jpg",
+    "derivative": "assets/images/catalog/15.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 16,
+    "source": "assets/images/16.jpg",
+    "derivative": "assets/images/catalog/16.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 17,
+    "source": "assets/images/17.jpg",
+    "derivative": "assets/images/catalog/17.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 18,
+    "source": "assets/images/18.jpg",
+    "derivative": "assets/images/catalog/18.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 19,
+    "source": "assets/images/gift-festive.jpg",
+    "derivative": "assets/images/catalog/19.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 20,
+    "source": "assets/images/gift-nuts.jpg",
+    "derivative": "assets/images/catalog/20.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 21,
+    "source": "assets/images/gift-hamper.jpg",
+    "derivative": "assets/images/catalog/21.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 22,
+    "source": "assets/images/gift-corporate.jpg",
+    "derivative": "assets/images/catalog/22.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  },
+  {
+    "id": 23,
+    "source": "assets/images/gift-family.jpg",
+    "derivative": "assets/images/catalog/23.jpg",
+    "size": "1200x900",
+    "treatment": "EXIF normalized; centered 4:3 crop; no stretching or padding. Original license retained."
+  }
+]

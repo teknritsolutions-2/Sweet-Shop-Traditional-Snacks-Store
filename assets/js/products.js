@@ -5,9 +5,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 480,
     "pack": "500 g",
-    "image": "assets/images/0.jpg",
+    "image": "assets/images/catalog/0.jpg",
     "description": "Kaju Katli, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Kaju Katli"
+    "types": "Kaju Katli",
+    "sourceImage": "assets/images/0.jpg"
   },
   {
     "id": 1,
@@ -15,9 +16,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 320,
     "pack": "500 g",
-    "image": "assets/images/1.jpg",
+    "image": "assets/images/catalog/1.jpg",
     "description": "Motichoor Laddu, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Motichoor Laddu"
+    "types": "Motichoor Laddu",
+    "sourceImage": "assets/images/1.jpg"
   },
   {
     "id": 2,
@@ -25,9 +27,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 280,
     "pack": "500 g",
-    "image": "assets/images/2.jpg",
+    "image": "assets/images/catalog/2.jpg",
     "description": "Besan Laddu, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Besan Laddu"
+    "types": "Besan Laddu",
+    "sourceImage": "assets/images/2.jpg"
   },
   {
     "id": 3,
@@ -35,9 +38,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 360,
     "pack": "500 g",
-    "image": "assets/images/3.jpg",
+    "image": "assets/images/catalog/3.jpg",
     "description": "Mysore Pak, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Mysore Pak"
+    "types": "Mysore Pak",
+    "sourceImage": "assets/images/3.jpg"
   },
   {
     "id": 4,
@@ -45,9 +49,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 240,
     "pack": "500 g",
-    "image": "assets/images/4.jpg",
+    "image": "assets/images/catalog/4.jpg",
     "description": "Soan Papdi, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Soan Papdi"
+    "types": "Soan Papdi",
+    "sourceImage": "assets/images/4.jpg"
   },
   {
     "id": 5,
@@ -55,9 +60,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 340,
     "pack": "500 g",
-    "image": "assets/images/5.jpg",
+    "image": "assets/images/catalog/5.jpg",
     "description": "Milk Cake, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Milk Cake"
+    "types": "Milk Cake",
+    "sourceImage": "assets/images/5.jpg"
   },
   {
     "id": 6,
@@ -65,9 +71,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 380,
     "pack": "500 g",
-    "image": "assets/images/6.jpg",
+    "image": "assets/images/catalog/6.jpg",
     "description": "Kesar Peda, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Kesar Peda"
+    "types": "Kesar Peda",
+    "sourceImage": "assets/images/6.jpg"
   },
   {
     "id": 7,
@@ -75,9 +82,10 @@ window.PRODUCTS = [
     "category": "Sweets",
     "price": 260,
     "pack": "500 g",
-    "image": "assets/images/7.jpg",
+    "image": "assets/images/catalog/7.jpg",
     "description": "Gulab Jamun, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Gulab Jamun"
+    "types": "Gulab Jamun",
+    "sourceImage": "assets/images/7.jpg"
   },
   {
     "id": 8,
@@ -85,9 +93,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 180,
     "pack": "500 g",
-    "image": "assets/images/8.jpg",
+    "image": "assets/images/catalog/8.jpg",
     "description": "Traditional Mixture, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Traditional Mixture"
+    "types": "Traditional Mixture",
+    "sourceImage": "assets/images/8.jpg"
   },
   {
     "id": 9,
@@ -95,9 +104,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 200,
     "pack": "500 g",
-    "image": "assets/images/9.jpg",
+    "image": "assets/images/catalog/9.jpg",
     "description": "Chakli, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Chakli"
+    "types": "Chakli",
+    "sourceImage": "assets/images/9.jpg"
   },
   {
     "id": 10,
@@ -105,9 +115,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 200,
     "pack": "500 g",
-    "image": "assets/images/10.jpg",
+    "image": "assets/images/catalog/10.jpg",
     "description": "Murukku, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Murukku"
+    "types": "Murukku",
+    "sourceImage": "assets/images/10.jpg"
   },
   {
     "id": 11,
@@ -115,9 +126,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 180,
     "pack": "500 g",
-    "image": "assets/images/11.jpg",
+    "image": "assets/images/catalog/11.jpg",
     "description": "Mathri, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Mathri"
+    "types": "Mathri",
+    "sourceImage": "assets/images/11.jpg"
   },
   {
     "id": 12,
@@ -125,9 +137,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 160,
     "pack": "500 g",
-    "image": "assets/images/12.jpg",
+    "image": "assets/images/catalog/12.jpg",
     "description": "Banana Chips, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Banana Chips"
+    "types": "Banana Chips",
+    "sourceImage": "assets/images/12.jpg"
   },
   {
     "id": 13,
@@ -135,9 +148,10 @@ window.PRODUCTS = [
     "category": "Savories",
     "price": 190,
     "pack": "500 g",
-    "image": "assets/images/13.jpg",
+    "image": "assets/images/catalog/13.jpg",
     "description": "Ribbon Pakoda, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Ribbon Pakoda"
+    "types": "Ribbon Pakoda",
+    "sourceImage": "assets/images/13.jpg"
   },
   {
     "id": 14,
@@ -145,9 +159,10 @@ window.PRODUCTS = [
     "category": "Dry Fruits",
     "price": 520,
     "pack": "500 g",
-    "image": "assets/images/14.jpg",
+    "image": "assets/images/catalog/14.jpg",
     "description": "Premium Almonds, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Premium Almonds"
+    "types": "Premium Almonds",
+    "sourceImage": "assets/images/14.jpg"
   },
   {
     "id": 15,
@@ -155,9 +170,10 @@ window.PRODUCTS = [
     "category": "Dry Fruits",
     "price": 580,
     "pack": "500 g",
-    "image": "assets/images/15.jpg",
+    "image": "assets/images/catalog/15.jpg",
     "description": "Cashews, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Cashews"
+    "types": "Cashews",
+    "sourceImage": "assets/images/cashews-landscape.jpg"
   },
   {
     "id": 16,
@@ -165,9 +181,10 @@ window.PRODUCTS = [
     "category": "Dry Fruits",
     "price": 740,
     "pack": "500 g",
-    "image": "assets/images/16.jpg",
+    "image": "assets/images/catalog/16.jpg",
     "description": "Pistachios, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Pistachios"
+    "types": "Pistachios",
+    "sourceImage": "assets/images/16.jpg"
   },
   {
     "id": 17,
@@ -175,9 +192,10 @@ window.PRODUCTS = [
     "category": "Dry Fruits",
     "price": 320,
     "pack": "500 g",
-    "image": "assets/images/17.jpg",
+    "image": "assets/images/catalog/17.jpg",
     "description": "Dates, a familiar favorite for thoughtful sharing and everyday celebrations.",
-    "types": "Dates"
+    "types": "Dates",
+    "sourceImage": "assets/images/17.jpg"
   },
   {
     "id": 18,
@@ -185,10 +203,11 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 950,
     "pack": "1 box",
-    "image": "assets/images/18.jpg",
+    "image": "assets/images/catalog/18.jpg",
     "description": "Assorted Mithai Box brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Mithai assortment",
-    "imageAlt": "An open assortment of Indian burfi sweets"
+    "imageAlt": "An open assortment of Indian burfi sweets",
+    "sourceImage": "assets/images/18.jpg"
   },
   {
     "id": 19,
@@ -196,10 +215,11 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 1250,
     "pack": "1 box",
-    "image": "assets/images/gift-festive.jpg",
+    "image": "assets/images/catalog/19.jpg",
     "description": "Festive Celebration Box brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Mithai assortment",
-    "imageAlt": "A box holding a varied selection of Indian mithai"
+    "imageAlt": "A box holding a varied selection of Indian mithai",
+    "sourceImage": "assets/images/gift-festive.jpg"
   },
   {
     "id": 20,
@@ -207,10 +227,11 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 1600,
     "pack": "1 box",
-    "image": "assets/images/gift-nuts.jpg",
+    "image": "assets/images/catalog/20.jpg",
     "description": "Premium Dry Fruits Box brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Dry fruits assortment",
-    "imageAlt": "A bowl of mixed nuts, shown as assortment inspiration"
+    "imageAlt": "A bowl of mixed nuts, shown as assortment inspiration",
+    "sourceImage": "assets/images/gift-nuts.jpg"
   },
   {
     "id": 21,
@@ -218,10 +239,11 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 1100,
     "pack": "1 box",
-    "image": "assets/images/gift-hamper.jpg",
+    "image": "assets/images/catalog/21.jpg",
     "description": "Sweets & Savories Hamper brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Sweets and savories",
-    "imageAlt": "A selection of South Indian sweets and savory snacks"
+    "imageAlt": "A selection of South Indian sweets and savory snacks",
+    "sourceImage": "assets/images/gift-hamper.jpg"
   },
   {
     "id": 22,
@@ -229,10 +251,11 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 1450,
     "pack": "1 box",
-    "image": "assets/images/gift-corporate.jpg",
+    "image": "assets/images/catalog/22.jpg",
     "description": "Corporate Gift Assortment brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Mithai assortment",
-    "imageAlt": "A colorful Indian mithai assortment in an open box"
+    "imageAlt": "A colorful Indian mithai assortment in an open box",
+    "sourceImage": "assets/images/gift-corporate.jpg"
   },
   {
     "id": 23,
@@ -240,9 +263,10 @@ window.PRODUCTS = [
     "category": "Gift Boxes",
     "price": 1800,
     "pack": "1 box",
-    "image": "assets/images/gift-family.jpg",
+    "image": "assets/images/catalog/23.jpg",
     "description": "Family Celebration Hamper brings a gifting selection together for your occasion. Discuss your preferred assortment and presentation before ordering.",
     "types": "Mithai assortment",
-    "imageAlt": "An assortment of Indian sweets with silver leaf"
+    "imageAlt": "An assortment of Indian sweets with silver leaf",
+    "sourceImage": "assets/images/gift-family.jpg"
   }
 ];

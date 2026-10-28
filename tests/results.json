@@ -429,7 +429,7 @@
       "pass": true
     },
     {
-      "name": "Mithloya branding visible in header and footer",
+      "name": "Saanvoya branding visible in header and footer",
       "pass": true
     },
     {
@@ -546,7 +546,7 @@
       ]
     },
     {
-      "name": "Product photographs show full subject",
+      "name": "Product photographs uniformly fill 1200×900 frames",
       "pass": true
     },
     {
@@ -697,11 +697,11 @@
       "status": 200
     },
     {
-      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2",
+      "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
       "status": 200
     },
     {
-      "url": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
+      "url": "https://fonts.gstatic.com/s/dmserifdisplay/v17/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0vrx52g.woff2",
       "status": 200
     },
     {

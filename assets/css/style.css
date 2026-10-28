@@ -112,15 +112,15 @@ p + p { margin-top: 16px; }
 .signature-section { background: var(--surface); padding-block: var(--section-space); }
 .product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
 .product-card { display: flex; flex-direction: column; min-width: 0; }
-.product-image { position: relative; display: block; aspect-ratio: 4/3; background: var(--surface); overflow: hidden; border-radius: 4px; border: 1px solid var(--border); }
-.product-image img { height: 100%; width: 100%; object-fit: contain; padding: 8px; }
+.product-image { position: relative; display: block; aspect-ratio: 4/3; background: var(--border); overflow: hidden; border-radius: 4px; }
+.product-image img { height: 100%; width: 100%; object-fit: cover; padding: 0; }
 
 .product-image .tag { position: absolute; top: 10px; inset-inline-start: 10px; background: var(--surface); font-size: 10px; padding: 4px 8px; letter-spacing: .6px; }
-.product-image:has(.assortment-tag) { padding-bottom: 28px; }
+
 .product-image .assortment-tag { position: absolute; inset-inline: 0; bottom: 0; padding: 6px 10px; background: var(--surface); border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); }
 .product-info { display: flex; flex: 1; flex-direction: column; padding-top: 16px; }
 .product-info .eyebrow { font-size: 12px; letter-spacing: .6px; color: var(--muted); }
-.product-info h3 { font-size: 24px; margin: 7px 0 0; min-height: 2.3em; }
+.product-info h3 { font-size: 24px; margin: 7px 0 0; min-height: 2.2em; }
 .product-bottom { margin-top: auto; padding-top: 16px; }
 .price { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; font-size: 16px; font-weight: 700; }
 .price small { font-size: 14px; font-weight: 400; color: var(--muted); }
@@ -170,26 +170,36 @@ p + p { margin-top: 16px; }
 .bulk-preview p { font-size: 16px; }
 .large-spark { font-size: 90px; color: var(--gold); }
 /* Home 2 has a quieter editorial gifting composition. */
-.premium-hero { position: relative; display: grid; grid-template-columns: .95fr 1.05fr; gap: 70px; align-items: center; padding-block: 54px; }
-.premium-hero h1 { margin: 20px 0 24px; }
-.premium-hero .button { margin-top: 28px; }
-.premium-hero figure { position: relative; }
-.premium-hero img { height: 460px; width: 100%; border-radius: 45% 45% 4px 4px; }
-.premium-hero figcaption { padding-top: 14px; text-align: end; font-style: italic; }
-.premium-mark { position: absolute; font-size: 95px; color: var(--gold); top: 35px; left: 48%; }
-.gift-collection { padding-top: var(--compact-space); }
-.gift-edit { border-block: 1px solid var(--border); }
-.gift-edit > .container { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; padding-block: var(--compact-space); }
-.gift-edit-heading h2 { margin: 15px 0 20px; }
-.gift-edit-options { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
-.gift-edit-options > a { padding-block: 18px; border-top: 1px solid var(--gold); }
-.gift-edit-options span, .texture-grid article > span { font-size: 12px; letter-spacing: 1px; color: var(--muted); }
-.gift-edit-options h3 { font-size: 32px; margin: 20px 0 16px; }
-.gift-edit-options p { font-size: 14px; }
-.gift-edit-options b { display: inline-block; font-size: 14px; border-bottom: 1px solid currentColor; margin-top: 24px; }
+
 .three-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 38px; }
 .three-columns article { border-top: 1px solid var(--border); padding-top: 22px; }
 .three-columns h3 { margin: 13px 0; }
+/* Home 2: one editorial gifting story with clear merchandise chapters. */
+.gifting-hero { display: grid; grid-template-columns: 1fr 1.1fr; margin-block: 40px 0; min-height: 490px; border-radius: 5px; overflow: hidden; background: var(--ink); color: white; }
+.gifting-hero-panel { padding: 48px; display: flex; align-items: start; flex-direction: column; justify-content: center; }
+.gifting-hero .eyebrow { color: var(--gold); }
+.gifting-hero h1 { font-size: clamp(44px, 4.1vw, 64px); margin: 22px 0; }
+.gifting-hero p:not(.eyebrow) { color: #e0e1e6; max-width: 390px; }
+.gifting-hero .button { margin-top: 27px; }
+.gifting-hero > img { height: 100%; min-height: 490px; width: 100%; object-fit: cover; }
+.hero-edition-note { font-size: 11px; letter-spacing: 1.5px; margin-top: 35px; color: #e0e1e6; }
+.gift-collection { padding-block: var(--section-space); }
+.occasion-collection { padding-bottom: var(--section-space); }
+.occasion-collection .section-heading > p { font-size: 15px; }
+.occasion-photo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.occasion-photo-grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 4px; }
+.occasion-photo-grid a > div { padding-top: 18px; }
+.occasion-photo-grid h3 { display: flex; justify-content: space-between; gap: 12px; margin: 8px 0 12px; }
+.occasion-photo-grid h3 span { font-family: var(--body); font-size: 22px; }
+.occasion-photo-grid p { font-size: 14px; }
+.dry-fruit-edit { background: var(--surface); }
+.savory-edit { position: relative; display: grid; grid-template-columns: .85fr 1.15fr; gap: 65px; align-items: center; padding-block: var(--section-space); }
+.savory-edit img { width: 100%; aspect-ratio: 4/3; border-radius: 4px; }
+.savory-edit h2 { margin: 17px 0 22px; }
+.savory-edit p:not(.eyebrow) { max-width: 490px; }
+.savory-edit .button { margin-top: 24px; }
+.savory-number { position: absolute; inset-inline-end: 0; top: 45px; font-family: var(--serif); font-size: 90px; opacity: .09; }
+
 /* About: assortment, craft, texture and gifting each have their own layout. */
 .about-intro { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: center; padding-top: 54px; }
 .about-intro h1 { margin: 20px 0 24px; }
@@ -339,6 +349,12 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .hero-intro br { display: none; }
 }
 @media (max-width: 1279px) {
+  .gifting-hero-panel { padding: 32px; }
+  .gifting-hero h1 { font-size: 48px; }
+  .gifting-hero > img { min-height: 470px; }
+  .occasion-photo-grid { gap: 22px; }
+  .occasion-photo-grid h3 { font-size: 25px; }
+  .savory-edit { gap: 38px; }
   :root { --section-space: 60px; --compact-space: 40px; --section-gap: 30px; }
   .container { width: min(1320px, calc(100% - 80px)); }
   .site-header { height: 82px; }
@@ -377,15 +393,6 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .gift-layout { gap: 35px; }
 
   .gift-filters { gap: 14px; }
-  .premium-hero { gap: 35px; }
-  .premium-hero h1 { font-size: 59px; }
-  .premium-hero img { height: 410px; }
-  .premium-mark { font-size: 70px; top: 25px; }
-  .gift-edit > .container { grid-template-columns: 1fr; gap: 28px; }
-  .gift-edit-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 30px; align-items: center; }
-  .gift-edit-heading > .eyebrow { grid-column: 1/-1; }
-  .gift-edit-heading h2 { margin-block: 5px; }
-  .gift-edit-options h3 br { display: none; }
   .about-intro, .craft-inner, .about-gifting { gap: 40px; }
   .about-intro h1 { font-size: 56px; }
   .about-intro img { height: auto; }
@@ -408,7 +415,22 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .footer-main > div:last-child { grid-column: 1/-1; display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
   .footer-main > div:last-child h4, .footer-main > div:last-child a { margin: 0; }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gifting-hero { grid-template-columns: 1fr; }
+  .gifting-hero-panel { padding: 36px; }
+  .gifting-hero h1 { font-size: 52px; }
+  .gifting-hero > img { height: 340px; min-height: 0; }
+}
 @media (max-width: 767px) {
+  .gifting-hero { grid-template-columns: 1fr; margin-top: 24px; }
+  .gifting-hero-panel { padding: 30px 24px; }
+  .gifting-hero h1 { font-size: 43px; }
+  .gifting-hero > img { min-height: 0; height: 280px; }
+  .hero-edition-note { margin-top: 24px; }
+  .occasion-photo-grid { grid-template-columns: 1fr; gap: 28px; }
+  .occasion-photo-grid img { aspect-ratio: 3/2; }
+  .savory-edit { grid-template-columns: 1fr; gap: 28px; }
+  .savory-number { display: none; }
   :root { --section-space: 40px; --compact-space: 32px; --section-gap: 24px; }
   .container { width: calc(100% - 40px); }
   h1 { font-size: 48px; letter-spacing: -1px; }
@@ -451,15 +473,6 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .festival img { height: 300px; }
   .gift-preview-links { gap: 18px; }
   .bulk-preview, .collection-close { flex-direction: column; align-items: start; gap: 20px; }
-  .premium-hero { grid-template-columns: 1fr; gap: 30px; padding-block: 36px; }
-  .premium-hero h1 { font-size: 54px; }
-  .premium-hero img { height: 330px; border-radius: 35% 35% 4px 4px; }
-  .premium-hero figcaption { text-align: start; }
-  .premium-mark { top: auto; bottom: 335px; inset-inline-end: 0; left: auto; }
-  .gift-edit-heading { display: block; }
-  .gift-edit-heading h2 { margin: 15px 0 20px; }
-  .gift-edit-options { gap: 25px; }
-  .gift-edit-options h3 { font-size: 28px; }
   .three-columns, .texture-grid { grid-template-columns: 1fr; gap: 24px; }
   .about-intro, .craft-inner, .about-gifting { grid-template-columns: 1fr; gap: 28px; }
   .about-intro { padding-top: 36px; }
@@ -515,7 +528,6 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .card-actions { grid-template-columns: 118px 1fr; }
   .form-grid, .enquiry-form > .form-grid, .bulk-fields .form-grid { grid-template-columns: 1fr; }
   .form-grid label:has(textarea) { grid-column: auto; }
-  .gift-edit-options { grid-template-columns: 1fr; }
   .assortment-mosaic { grid-template-columns: 1fr; }
   .assortment-tile { display: grid; grid-template-columns: 115px 1fr; gap: 20px; align-items: center; }
   .assortment-tile img { width: 115px; height: 140px; }

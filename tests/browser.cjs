@@ -23,10 +23,9 @@ function check(name, pass, details) {
   });
   const visit = async url => {
     await page.goto(base + url);
-    await page.evaluate(() => Promise.all([
-      document.fonts.ready,
-      ...[...document.images].map(image => { image.loading = 'eager'; return image.decode().catch(() => {}); })
-    ]));
+    await page.evaluate(() => { [...document.images].forEach(image => { image.loading = 'eager'; }); });
+    await page.waitForFunction(() => [...document.images].every(image => image.complete));
+    await page.evaluate(() => document.fonts.ready);
   };
   const shot = name => page.screenshot({ path: path.join(output, name + '.png'), fullPage: true });
   const corePages = [
@@ -95,7 +94,7 @@ function check(name, pass, details) {
   check('Navigation centered across the overall page', aligned.centered);
   check('Header footer and sections share gutters', aligned.gutters);
   check('Familiar Flavors uses the same section gutters', await page.evaluate(() => document.querySelector('.tradition').getBoundingClientRect().x === document.querySelector('.header-inner').getBoundingClientRect().x));
-  check('Mithloya branding visible in header and footer', await page.locator('.logo .brand-name').textContent() === 'Mithloya' && await page.locator('.footer-brand .brand-name').textContent() === 'Mithloya');
+  check('Saanvoya branding visible in header and footer', await page.locator('.logo .brand-name').textContent() === 'Saanvoya' && await page.locator('.footer-brand .brand-name').textContent() === 'Saanvoya');
   const order = await page.locator('.header-end').evaluate(element => [...element.querySelectorAll('button, a')].map(node => node.className));
   check('Desktop utility order: theme, RTL, bag, shop', /theme/.test(order[0]) && /rtl/.test(order[1]) && /cart-link/.test(order[2]) && /button/.test(order[3]), order);
   check('Empty bag badge hidden', !await page.locator('.cart-count').isVisible());
@@ -136,7 +135,7 @@ function check(name, pass, details) {
     check('Contextual related products for category at ' + id, categoryMatch && related.length === (id === 14 ? 3 : 4), related);
   }
   await visit('pages/products.html');
-  check('Product photographs show full subject', await page.locator('.product-image img').evaluateAll(images => images.every(image => getComputedStyle(image).objectFit === 'contain')));
+  check('Product photographs uniformly fill 1200×900 frames', await page.locator('.product-image img').evaluateAll(images => images.every(image => getComputedStyle(image).objectFit === 'cover' && image.naturalWidth === 1200 && image.naturalHeight === 900)));
   check('All 24 product records preserved', await page.locator('.product-card').count() === 24);
   await page.locator('[data-category="Savories"]').click();
   check('Category filter', await page.locator('.product-card').count() === 6);

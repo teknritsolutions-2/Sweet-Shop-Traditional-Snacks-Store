@@ -31,3 +31,13 @@ After the client clarified the naming instruction, the original identity **Mithl
 Latest browser run: **165 / 165 checks passed**, with the same **660** all-page responsive/theme/direction cases and no JavaScript exceptions. New checks verify exact navigation centering, equal header/footer/section gutters, visible brand text, full-subject product photo rendering, and quantity increment/decrement behavior. Card quantities retain direct numeric input but replace browser spinner arrows with explicit aligned minus/plus buttons. Bulk and gift photos use natural dimensions to remove artificial white bars. The Familiar Flavors section uses compact vertical spacing and naturally proportioned photography.
 
 The Familiar Flavors photograph was pulled to the page edge by a legacy `margin: 0` rule overriding its container margins. That rule was removed, and an explicit gutter-alignment assertion now covers the section.
+
+## Saanvoya / Home 2 and uniform image refinement
+
+The current brand is **Saanvoya**. Home 2 now follows a six-section gifting sequence with one coherent photographic hero, four featured gifts, three occasion pathways, four dry-fruit products, a savory feature and a compact enquiry close. The tablet hero stacks before its text column becomes cramped.
+
+The former inset/contain card presentation is superseded by consistently cropped **1200 × 900** photo assets displayed edge to edge in 4:3 frames. A newly licensed cashew-kernel photo replaces the bag photograph. The accurate existing brown-almond photo is retained with a matching crop. There are no stretched images, padding borders or differently sized card photo areas. The preparation script and source/derivative map are retained for repeatability. These photographic derivatives retain their source licenses.
+
+The browser suite checks all 24 catalog photos for exact natural dimensions and the full-frame cover treatment. Latest run: **165 / 165 functional checks**, **660 page/width/theme/direction cases**, no JavaScript exceptions. Home 2 desktop/tablet/mobile and the merchandise rows were visually inspected; review led to the tablet-hero and almond-selection corrections.
+
+Photo preparation now normalizes EXIF orientation before cropping; this corrected an almond image that browsers otherwise interpreted as portrait. Browser image checks wait for actual loading to complete before evaluating natural dimensions. The runtime remains buildless; Pillow is only an optional asset-preparation dependency.
