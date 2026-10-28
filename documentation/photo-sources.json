@@ -209,5 +209,89 @@
     ],
     "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Assorted_Indian_Sweets.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Assorted_Indian_Sweets.jpg"
+  },
+  {
+    "id": "gift-festive",
+    "file": "Mithaas sweets box Indian food.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Mithaas_sweets_box_Indian_food.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mithaas_sweets_box_Indian_food.jpg",
+    "author": "Krista",
+    "licenses": [
+      "https://creativecommons.org/licenses/by/2.0/"
+    ],
+    "local": "assets/images/gift-festive.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "gift-nuts",
+    "file": "Mixed nuts bowl.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Mixed_nuts_bowl.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mixed_nuts_bowl.jpg",
+    "author": "Melchoir",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/2.5/"
+    ],
+    "local": "assets/images/gift-nuts.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "gift-hamper",
+    "file": "Diwali Sweets and Snacks.png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Diwali_Sweets_and_Snacks.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Diwali_Sweets_and_Snacks.png",
+    "author": "Gopinath (Linga007)",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "local": "assets/images/gift-hamper.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "gift-corporate",
+    "file": "Sweets Diwali Mithai India.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sweets_Diwali_Mithai_India.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sweets_Diwali_Mithai_India.jpg",
+    "author": "Krista",
+    "licenses": [
+      "https://creativecommons.org/licenses/by/2.0/"
+    ],
+    "local": "assets/images/gift-corporate.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "gift-family",
+    "file": "Diwali sweets India 2009.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Diwali_sweets_India_2009.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Diwali_sweets_India_2009.jpg",
+    "author": "robertsharp",
+    "licenses": [
+      "https://creativecommons.org/licenses/by/2.0/"
+    ],
+    "local": "assets/images/gift-family.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "preparation",
+    "file": "Kajukatali in making.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Kajukatali_in_making.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kajukatali_in_making.jpg",
+    "author": "Sushant savla",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "local": "assets/images/preparation.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
+  },
+  {
+    "id": "katli-detail",
+    "file": "Kaju Katli.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kaju_Katli.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaju_Katli.JPG",
+    "author": "1989bhaveshv",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "local": "assets/images/katli-detail.jpg",
+    "changes": "Resized and JPEG compressed. CSS display crops vary."
   }
 ]

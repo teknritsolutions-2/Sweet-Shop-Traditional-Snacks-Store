@@ -1,6 +1,6 @@
 # Sweet Shop & Traditional Snacks Store
 
-A buildless HTML5, CSS and vanilla JavaScript storefront with two distinct homepages, 24 centralized product records, catalog search/filter/sort, product details, persistent cart, gifting explorer, sweet anatomy, and dedicated bulk/contact enquiry forms. Includes light/dark modes and LTR/RTL layouts.
+A buildless HTML5, CSS and vanilla JavaScript storefront with two distinct homepages, 24 centralized product records, catalog search/filter/sort, product details, persistent cart, gifting explorer, sweet anatomy, and a centralized general/bulk enquiry form on Contact. Includes light/dark modes and LTR/RTL layouts.
 
 ## Preview
 
@@ -8,9 +8,9 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory and open 
 
 ## Content and ordering
 
-Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. No invented company name, address, hours, phone number, certifications, ratings or payment claims are included.
+Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. Gift photography is labeled as assortment inspiration; it is not presented as verified store packaging. No invented company name, address, hours, phone number, certifications, ratings or payment claims are included.
 
-The cart uses browser localStorage. Enquiry forms validate details, provide a review and download a plain-text request. They do not transmit data, process payments or confirm orders. Add real store contact destinations and an appropriate submission service before enabling online enquiry delivery.
+The cart uses browser localStorage. Enquiry form modes validate details, provide a review and download a plain-text request. They do not transmit data, process payments or confirm orders. Add real store contact destinations and an appropriate submission service before enabling online enquiry delivery.
 
 ## Files
 
@@ -28,7 +28,7 @@ The cart uses browser localStorage. Enquiry forms validate details, provide a re
 
 Install dev tools with `npm install`, run the preview server, then `npm test`. macOS defaults to installed Brave; use `BROWSER_PATH=/path/to/browser npm test` to select another Chromium executable. On other systems install Playwright Chromium with `npx playwright install chromium`. QA tools are not used by the site runtime.
 
-Responsive page screenshots cover desktop 1440, tablet 820 and mobile 390. Homepage overflow checks cover 320, 360, 390, 430, 640, 768, 820, 1024, 1280, 1440 and 1920. Browser tests cover sticky header, navigation dropdown, mobile drawer, theme, RTL, product switching, anatomy, gifting filters, catalog search/sort, cart persistence/calculation and enquiry review.
+Responsive page screenshots include About and both Contact modes at desktop 1440, tablet 820 and mobile 390. Every HTML page is checked in all four theme/direction combinations at 320, 360, 390, 430, 640, 768, 820, 1024, 1280, 1440 and 1920. Browser tests cover sticky header, navigation dropdown, mobile drawer, theme, RTL, product switching, anatomy, gifting filters, catalog search/sort, cart persistence/calculation and enquiry review.
 
 ## Hosting
 

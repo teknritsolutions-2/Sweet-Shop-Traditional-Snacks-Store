@@ -1,5 +1,141 @@
-const root=document.documentElement;try{root.dataset.theme=localStorage.getItem('sweet-theme')||'light';root.dir=localStorage.getItem('sweet-dir')||'ltr'}catch{}document.querySelectorAll('.theme').forEach(b=>b.onclick=()=>{root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem('sweet-theme',root.dataset.theme)}catch{}});document.querySelectorAll('.rtl').forEach(b=>b.onclick=()=>{root.dir=root.dir==='rtl'?'ltr':'rtl';try{localStorage.setItem('sweet-dir',root.dir)}catch{}});
-const header=document.querySelector('.site-header'),menu=document.querySelector('.menu-toggle'),nav=header.querySelector('nav');let previousFocus;function setDrawer(open){nav.inert=!open&&innerWidth<1100;header.classList.toggle('drawer-open',open);menu.setAttribute('aria-expanded',open);document.body.style.overflowY=open?'hidden':'';if(open){previousFocus=document.activeElement;nav.querySelector('button').focus()}else previousFocus?.focus()}nav.inert=innerWidth<1100;menu.onclick=()=>setDrawer(true);document.querySelector('.close-menu').onclick=()=>setDrawer(false);document.querySelector('.scrim').onclick=()=>setDrawer(false);const home=document.querySelector('.home-menu'),homeButton=document.querySelector('.home-toggle');const toggleHome=v=>{home.classList.toggle('open',v);homeButton.setAttribute('aria-expanded',v)};let homePinned=false;homeButton.onclick=()=>{homePinned=!homePinned;toggleHome(homePinned)};home.addEventListener('mouseenter',()=>{if(innerWidth>=1100)toggleHome(true)});home.addEventListener('mouseleave',()=>{if(innerWidth>=1100&&!homePinned)toggleHome(false)});home.addEventListener('focusout',e=>{if(!home.contains(e.relatedTarget))toggleHome(false)});document.addEventListener('click',e=>{if(!home.contains(e.target)){homePinned=false;toggleHome(false)}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){homePinned=false;toggleHome(false);if(header.classList.contains('drawer-open'))setDrawer(false)}if(e.key==='Tab'&&header.classList.contains('drawer-open')){const all=Array.from(nav.querySelectorAll('a,button')).filter(x=>x.getClientRects().length);const first=all[0],last=all.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});addEventListener('resize',()=>{nav.inert=innerWidth<1100&&!header.classList.contains('drawer-open');if(innerWidth>=1100&&header.classList.contains('drawer-open'))setDrawer(false)});document.querySelector('.back-top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
-document.querySelectorAll('[data-hero]').forEach(b=>{b.setAttribute('aria-pressed',b.classList.contains('active'));b.onclick=()=>{const p=PRODUCTS[Number(b.dataset.hero)];document.getElementById('hero-image').src=storePath+p.image;document.getElementById('hero-image').alt=p.name;document.getElementById('hero-product').textContent=p.name;document.getElementById('hero-price').textContent=money(p.price)+' / '+p.pack;document.getElementById('hero-shop').href=document.getElementById('hero-detail').href=storePath+'pages/product-details.html?id='+p.id;document.querySelectorAll('[data-hero]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b)})}});
-const anatomyCopy=['Kaju katli is traditionally a cashew-based sweet. Ask for the exact ingredient and allergen details of your chosen assortment.','Traditional mithai making brings careful preparation, cooking and shaping together. Methods vary by region and recipe.','Kaju katli is known for its fine, smooth texture and distinctive diamond shape. Texture varies with preparation.','A sweet shared is a welcome, a thank-you or a celebration. Serve a small assortment so everyone can discover a favorite.'];document.querySelectorAll('[data-anatomy]').forEach(b=>{b.setAttribute('aria-pressed',b.classList.contains('active'));b.onclick=()=>{document.querySelector('.anatomy-description').textContent=anatomyCopy[Number(b.dataset.anatomy)];document.querySelectorAll('[data-anatomy]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',x===b)})}});
-const heroArt=document.querySelector('.hero-art');if(heroArt&&matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches){heroArt.addEventListener('pointermove',e=>{if(innerWidth<1100)return;const r=heroArt.getBoundingClientRect();heroArt.style.setProperty('--tilt-x',((.5-(e.clientY-r.top)/r.height)*5)+'deg');heroArt.style.setProperty('--tilt-y',(((e.clientX-r.left)/r.width-.5)*5)+'deg')});heroArt.addEventListener('pointerleave',()=>{heroArt.style.setProperty('--tilt-x','0deg');heroArt.style.setProperty('--tilt-y','0deg')})}
+const root = document.documentElement;
+try {
+  root.dataset.theme = localStorage.getItem('sweet-theme') || 'light';
+  root.dir = localStorage.getItem('sweet-dir') || 'ltr';
+} catch { /* Browser privacy settings may disable storage. */ }
+const sun = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/>';
+const moon = '<path d="M20.5 13A8.5 8.5 0 0 1 11 3.5 8.5 8.5 0 1 0 20.5 13Z"/>';
+function updateUtilities() {
+  document.querySelectorAll('.theme').forEach(button => {
+    const dark = root.dataset.theme === 'dark';
+    button.querySelector('svg').innerHTML = dark ? moon : sun;
+    button.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    button.setAttribute('aria-pressed', String(dark));
+  });
+  document.querySelectorAll('.rtl').forEach(button => {
+    const rtl = root.dir === 'rtl';
+    button.textContent = rtl ? 'LTR' : 'RTL';
+    button.setAttribute('aria-label', rtl ? 'Switch to left-to-right layout' : 'Switch to right-to-left layout');
+    button.setAttribute('aria-pressed', String(rtl));
+  });
+}
+document.querySelectorAll('.theme').forEach(button => button.addEventListener('click', () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  try { localStorage.setItem('sweet-theme', root.dataset.theme); } catch {}
+  updateUtilities();
+}));
+document.querySelectorAll('.rtl').forEach(button => button.addEventListener('click', () => {
+  root.dir = root.dir === 'rtl' ? 'ltr' : 'rtl';
+  try { localStorage.setItem('sweet-dir', root.dir); } catch {}
+  updateUtilities();
+}));
+updateUtilities();
+
+const header = document.querySelector('.site-header');
+const menu = document.querySelector('.menu-toggle');
+const nav = header.querySelector('nav');
+const utilities = header.querySelector('.utilities');
+const desktopUtilities = header.querySelector('.header-end');
+const drawerUtilities = header.querySelector('.drawer-utilities');
+let previousFocus;
+function moveUtilities() {
+  const target = innerWidth < 1100 ? drawerUtilities : desktopUtilities;
+  if (utilities.parentElement !== target) target.prepend(utilities);
+  nav.inert = innerWidth < 1100 && !header.classList.contains('drawer-open');
+}
+function setDrawer(open) {
+  nav.inert = !open && innerWidth < 1100;
+  header.classList.toggle('drawer-open', open);
+  menu.setAttribute('aria-expanded', String(open));
+  document.body.style.overflowY = open ? 'hidden' : '';
+  if (open) {
+    previousFocus = document.activeElement;
+    nav.querySelector('button').focus();
+  } else previousFocus?.focus();
+}
+moveUtilities();
+menu.addEventListener('click', () => setDrawer(true));
+header.querySelector('.close-menu').addEventListener('click', () => setDrawer(false));
+header.querySelector('.scrim').addEventListener('click', () => setDrawer(false));
+addEventListener('resize', () => {
+  if (innerWidth >= 1100 && header.classList.contains('drawer-open')) setDrawer(false);
+  moveUtilities();
+});
+const home = header.querySelector('.home-menu');
+const homeButton = home.querySelector('.home-toggle');
+let homePinned = false;
+function toggleHome(open) {
+  home.classList.toggle('open', open);
+  homeButton.setAttribute('aria-expanded', String(open));
+}
+homeButton.addEventListener('click', () => { homePinned = !homePinned; toggleHome(homePinned); });
+home.addEventListener('mouseenter', () => { if (innerWidth >= 1100) toggleHome(true); });
+home.addEventListener('mouseleave', () => { if (innerWidth >= 1100 && !homePinned) toggleHome(false); });
+home.addEventListener('focusin', () => { if (innerWidth >= 1100) toggleHome(true); });
+home.addEventListener('focusout', event => {
+  if (!home.contains(event.relatedTarget)) { homePinned = false; toggleHome(false); }
+});
+document.addEventListener('click', event => {
+  if (!home.contains(event.target)) { homePinned = false; toggleHome(false); }
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    homePinned = false;
+    toggleHome(false);
+    if (header.classList.contains('drawer-open')) setDrawer(false);
+  }
+  if (event.key === 'Tab' && header.classList.contains('drawer-open')) {
+    const elements = [...nav.querySelectorAll('a, button')].filter(element => element.getClientRects().length);
+    const first = elements[0], last = elements.at(-1);
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+  }
+});
+document.querySelector('.back-top').addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+
+// Product switching remains exclusive to the product-first homepage.
+document.querySelectorAll('[data-hero]').forEach(button => {
+  button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+  button.addEventListener('click', () => {
+    const product = PRODUCTS[Number(button.dataset.hero)];
+    const image = document.getElementById('hero-image');
+    image.src = storePath + product.image;
+    image.alt = product.name;
+    document.getElementById('hero-product').textContent = product.name;
+    document.getElementById('hero-price').textContent = money(product.price) + ' / ' + product.pack;
+    document.getElementById('hero-shop').href = document.getElementById('hero-detail').href = storePath + 'pages/product-details.html?id=' + product.id;
+    document.querySelectorAll('[data-hero]').forEach(other => {
+      other.classList.toggle('active', other === button);
+      other.setAttribute('aria-pressed', String(other === button));
+    });
+  });
+});
+const anatomyCopy = [
+  'Kaju katli is traditionally a cashew-based sweet. Ask for the exact ingredient and allergen details of your chosen assortment.',
+  'Traditional mithai making brings careful preparation, cooking and shaping together. Methods vary by region and recipe.',
+  'Kaju katli is known for its fine, smooth texture and distinctive diamond shape. Texture varies with preparation.',
+  'A sweet shared is a welcome, a thank-you or a celebration. Serve a small assortment so everyone can discover a favorite.'
+];
+document.querySelectorAll('[data-anatomy]').forEach(button => {
+  button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+  button.addEventListener('click', () => {
+    document.querySelector('.anatomy-description').textContent = anatomyCopy[Number(button.dataset.anatomy)];
+    document.querySelectorAll('[data-anatomy]').forEach(other => {
+      other.classList.toggle('active', other === button);
+      other.setAttribute('aria-pressed', String(other === button));
+    });
+  });
+});
+const heroArt = document.querySelector('.hero-art');
+if (heroArt && matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
+  heroArt.addEventListener('pointermove', event => {
+    if (innerWidth < 1100) return;
+    const bounds = heroArt.getBoundingClientRect();
+    heroArt.style.setProperty('--tilt-x', ((.5 - (event.clientY - bounds.top) / bounds.height) * 5) + 'deg');
+    heroArt.style.setProperty('--tilt-y', (((event.clientX - bounds.left) / bounds.width - .5) * 5) + 'deg');
+  });
+  heroArt.addEventListener('pointerleave', () => {
+    heroArt.style.setProperty('--tilt-x', '0deg');
+    heroArt.style.setProperty('--tilt-y', '0deg');
+  });
+}

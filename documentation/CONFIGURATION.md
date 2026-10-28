@@ -7,3 +7,5 @@ Store address, map, contact channels and business hours are deliberately not inv
 Theme, direction and cart are stored independently in the visitor's browser. Form input is never interpreted as HTML. Inputs enforce browser constraints, quantity bounds and a local-date minimum.
 
 Image credits are in photo-sources.json and the linked public credits page. Preserve the attribution and applicable share-alike image license when reusing assets.
+
+Contact is the only enquiry form. Open `pages/contact.html?enquiry=bulk` for celebration fields; optional `product` (catalog ID), `occasion`, `quantity` and `packaging` parameters prefill editable fields. `?cart=1` retains the selected bag items in General mode. The full Gift Explorer lives on Bulk & Festival Orders and creates the corresponding Contact URL.

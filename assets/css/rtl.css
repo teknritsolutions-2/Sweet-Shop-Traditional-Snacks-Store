@@ -1,1 +1,7 @@
-html[dir="rtl"] .hero-photo{transform:rotate(4deg)}html[dir="rtl"] .hero-art:hover .hero-photo{transform:rotate(2deg) translateY(-5px)}html[dir="rtl"] .hero-spark{transform:none}@media(max-width:1099px){html[dir="rtl"] .site-header nav{left:auto;right:0;transform:translateX(110%)}html[dir="rtl"] .site-header.drawer-open nav{transform:translateX(0)}}
+/* Reading direction changes layout, never the photographs or symbol. */
+html[dir="rtl"] .hero-photo { transform: rotate(4deg) rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)); }
+html[dir="rtl"] .hero-art:hover .hero-photo { transform: rotate(2deg) translateY(-4px); }
+@media (max-width: 1099px) {
+  html[dir="rtl"] .site-header nav { left: auto; right: 0; transform: translateX(110%); }
+  html[dir="rtl"] .site-header.drawer-open nav { transform: translateX(0); }
+}
