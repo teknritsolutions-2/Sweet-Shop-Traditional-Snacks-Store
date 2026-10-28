@@ -10,4 +10,4 @@ Image credits are in photo-sources.json and the linked public credits page. Pres
 
 Contact is the only enquiry form. Open `pages/contact.html?enquiry=bulk` for celebration fields; optional `product` (catalog ID), `occasion`, `quantity` and `packaging` parameters prefill editable fields. `?cart=1` retains the selected bag items in General mode. The full Gift Explorer lives on Bulk & Festival Orders and creates the corresponding Contact URL.
 
-The client clarified that a new original name was desired. The storefront identity is Saanvoya, paired with the existing sweet-diamond symbol. Header and footer share the section content width; navigation centers independently of the logo and utility widths. Product cards use explicit minus/plus quantity steppers with direct numeric entry and bounds of 1–10,000.
+The client clarified that a new original name was desired. The storefront identity is Mithmora, paired with the existing sweet-diamond symbol. Header and footer share the section content width; navigation centers independently of the logo and utility widths. Product cards use explicit minus/plus quantity steppers with direct numeric entry and bounds of 1–10,000.

@@ -45,3 +45,7 @@ Photo preparation now normalizes EXIF orientation before cropping; this correcte
 ## Home 2 banner refinement
 
 Replaced the dark split banner with a light editorial hero, a shorter heading, a restrained offset gold photo outline and a compact personalization link. The change is scoped to Home 2 and its component styles. Desktop/tablet/mobile screenshots were refreshed and visually reviewed; the existing 165-check browser suite and 660-case responsive/theme matrix remain the regression gate.
+
+## Store-name refinement
+
+Current identity: **Mithmora — Sweets & Snacks**. Updated the shared header/footer identity, page titles and dynamic product title, with a compact descriptive line beneath the wordmark. Brand presence and overflow were checked across all fourteen pages at 320px and 1440px (28 page/viewport checks). Static link/font validation and JavaScript syntax checks also passed.

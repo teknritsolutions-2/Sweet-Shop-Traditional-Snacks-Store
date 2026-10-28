@@ -94,7 +94,7 @@ function check(name, pass, details) {
   check('Navigation centered across the overall page', aligned.centered);
   check('Header footer and sections share gutters', aligned.gutters);
   check('Familiar Flavors uses the same section gutters', await page.evaluate(() => document.querySelector('.tradition').getBoundingClientRect().x === document.querySelector('.header-inner').getBoundingClientRect().x));
-  check('Saanvoya branding visible in header and footer', await page.locator('.logo .brand-name').textContent() === 'Saanvoya' && await page.locator('.footer-brand .brand-name').textContent() === 'Saanvoya');
+  check('Mithmora branding visible in header and footer', await page.locator('.logo .brand-name').textContent() === 'Mithmora' && await page.locator('.footer-brand .brand-name').textContent() === 'Mithmora');
   const order = await page.locator('.header-end').evaluate(element => [...element.querySelectorAll('button, a')].map(node => node.className));
   check('Desktop utility order: theme, RTL, bag, shop', /theme/.test(order[0]) && /rtl/.test(order[1]) && /cart-link/.test(order[2]) && /button/.test(order[3]), order);
   check('Empty bag badge hidden', !await page.locator('.cart-count').isVisible());

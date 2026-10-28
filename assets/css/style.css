@@ -42,6 +42,8 @@ p + p { margin-top: 16px; }
 .site-header { position: sticky; top: 0; z-index: 1000; background: var(--bg); border-bottom: 1px solid var(--border); height: 92px; }
 .header-inner { height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 24px; }
 .logo { display: inline-flex; align-items: center; gap: 12px; flex-shrink: 0; justify-self: start; }
+.brand-lockup { display: flex; flex-direction: column; gap: 3px; }
+.brand-descriptor { font: 600 10px/1.3 var(--body); letter-spacing: 1.7px; text-transform: uppercase; }
 .brand-name { font: 28px/1.1 var(--serif); letter-spacing: -.6px; white-space: nowrap; }
 .logo img { width: 52px; height: 52px; }
 .site-header nav { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 1.8vw, 28px); font-size: 14px; font-weight: 600; margin-inline: auto; }

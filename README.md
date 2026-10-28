@@ -8,7 +8,7 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from this directory and open 
 
 ## Content and ordering
 
-Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. Gift photography is labeled as assortment inspiration; it is not presented as verified store packaging. Saanvoya is the original brand name created for this project at the client’s request. No address, hours, phone number, certifications, ratings or payment claims are invented.
+Product data lives in `assets/js/products.js`. Prices and pack sizes are indicative configurable collection data, not client-approved commercial offers. Photography represents product types rather than verified store inventory. Product ingredients, allergens, storage guidance, exact gift contents, packaging, delivery coverage and availability must be confirmed by the store. Gift photography is labeled as assortment inspiration; it is not presented as verified store packaging. Mithmora is the original brand name created for this project at the client’s request. No address, hours, phone number, certifications, ratings or payment claims are invented.
 
 The cart uses browser localStorage. Enquiry form modes validate details, provide a review and download a plain-text request. They do not transmit data, process payments or confirm orders. Add real store contact destinations and an appropriate submission service before enabling online enquiry delivery.
 
