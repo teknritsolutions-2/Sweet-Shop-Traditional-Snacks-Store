@@ -41,3 +41,7 @@ The former inset/contain card presentation is superseded by consistently cropped
 The browser suite checks all 24 catalog photos for exact natural dimensions and the full-frame cover treatment. Latest run: **165 / 165 functional checks**, **660 page/width/theme/direction cases**, no JavaScript exceptions. Home 2 desktop/tablet/mobile and the merchandise rows were visually inspected; review led to the tablet-hero and almond-selection corrections.
 
 Photo preparation now normalizes EXIF orientation before cropping; this corrected an almond image that browsers otherwise interpreted as portrait. Browser image checks wait for actual loading to complete before evaluating natural dimensions. The runtime remains buildless; Pillow is only an optional asset-preparation dependency.
+
+## Home 2 banner refinement
+
+Replaced the dark split banner with a light editorial hero, a shorter heading, a restrained offset gold photo outline and a compact personalization link. The change is scoped to Home 2 and its component styles. Desktop/tablet/mobile screenshots were refreshed and visually reviewed; the existing 165-check browser suite and 660-case responsive/theme matrix remain the regression gate.

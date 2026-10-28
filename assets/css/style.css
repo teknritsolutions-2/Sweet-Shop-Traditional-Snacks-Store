@@ -175,14 +175,20 @@ p + p { margin-top: 16px; }
 .three-columns article { border-top: 1px solid var(--border); padding-top: 22px; }
 .three-columns h3 { margin: 13px 0; }
 /* Home 2: one editorial gifting story with clear merchandise chapters. */
-.gifting-hero { display: grid; grid-template-columns: 1fr 1.1fr; margin-block: 40px 0; min-height: 490px; border-radius: 5px; overflow: hidden; background: var(--ink); color: white; }
-.gifting-hero-panel { padding: 48px; display: flex; align-items: start; flex-direction: column; justify-content: center; }
-.gifting-hero .eyebrow { color: var(--gold); }
-.gifting-hero h1 { font-size: clamp(44px, 4.1vw, 64px); margin: 22px 0; }
-.gifting-hero p:not(.eyebrow) { color: #e0e1e6; max-width: 390px; }
-.gifting-hero .button { margin-top: 27px; }
-.gifting-hero > img { height: 100%; min-height: 490px; width: 100%; object-fit: cover; }
-.hero-edition-note { font-size: 11px; letter-spacing: 1.5px; margin-top: 35px; color: #e0e1e6; }
+.gifting-hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 72px; padding-block: 56px 40px; }
+.gifting-hero-panel { padding-block: 20px; }
+.gifting-hero .eyebrow { display: flex; align-items: center; gap: 12px; }
+.gifting-hero .eyebrow::before { content: ''; width: 30px; height: 1px; background: var(--gold); }
+.gifting-hero h1 { font-size: clamp(48px, 4.6vw, 70px); margin: 24px 0; letter-spacing: -1.5px; }
+.gifting-hero-panel > p:not(.eyebrow) { max-width: 400px; font-size: 17px; }
+.gifting-hero .button { margin-top: 28px; }
+.gifting-hero-photo { position: relative; padding: 15px 15px 0 0; }
+.gifting-hero-photo::before { content: ''; position: absolute; inset: 0 0 35px 35px; border: 1px solid var(--gold); z-index: -1; }
+.gifting-hero-photo img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 3px; }
+.gifting-hero-photo figcaption { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-top: 16px; }
+.gifting-hero-photo figcaption span { font-size: 10px; letter-spacing: 1px; }
+.gifting-hero-photo figcaption a { font-size: 13px; color: var(--text); border-bottom: 1px solid var(--border); }
+
 .gift-collection { padding-block: var(--section-space); }
 .occasion-collection { padding-bottom: var(--section-space); }
 .occasion-collection .section-heading > p { font-size: 15px; }
@@ -349,9 +355,9 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .hero-intro br { display: none; }
 }
 @media (max-width: 1279px) {
-  .gifting-hero-panel { padding: 32px; }
-  .gifting-hero h1 { font-size: 48px; }
-  .gifting-hero > img { min-height: 470px; }
+  .gifting-hero { gap: 38px; }
+  .gifting-hero h1 { font-size: 52px; }
+  .gifting-hero-photo figcaption { align-items: start; flex-direction: column; gap: 8px; }
   .occasion-photo-grid { gap: 22px; }
   .occasion-photo-grid h3 { font-size: 25px; }
   .savory-edit { gap: 38px; }
@@ -416,17 +422,15 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .footer-main > div:last-child h4, .footer-main > div:last-child a { margin: 0; }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .gifting-hero { grid-template-columns: 1fr; }
-  .gifting-hero-panel { padding: 36px; }
-  .gifting-hero h1 { font-size: 52px; }
-  .gifting-hero > img { height: 340px; min-height: 0; }
+  .gifting-hero { grid-template-columns: 1fr 1fr; padding-block: 36px; gap: 30px; }
+  .gifting-hero h1 { font-size: 46px; }
 }
 @media (max-width: 767px) {
-  .gifting-hero { grid-template-columns: 1fr; margin-top: 24px; }
-  .gifting-hero-panel { padding: 30px 24px; }
-  .gifting-hero h1 { font-size: 43px; }
-  .gifting-hero > img { min-height: 0; height: 280px; }
-  .hero-edition-note { margin-top: 24px; }
+  .gifting-hero { grid-template-columns: 1fr; gap: 28px; padding-block: 30px; }
+  .gifting-hero-panel { padding: 0; }
+  .gifting-hero h1 { font-size: clamp(43px, 10vw, 55px); }
+  .gifting-hero-panel > p:not(.eyebrow) { font-size: 16px; }
+  .gifting-hero-photo figcaption { flex-direction: row; }
   .occasion-photo-grid { grid-template-columns: 1fr; gap: 28px; }
   .occasion-photo-grid img { aspect-ratio: 3/2; }
   .savory-edit { grid-template-columns: 1fr; gap: 28px; }
