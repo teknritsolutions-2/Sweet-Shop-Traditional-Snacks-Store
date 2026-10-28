@@ -1,0 +1,333 @@
+{
+  "checks": [
+    {
+      "name": "home1 desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "home1 desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "home1 tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "home1 tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "home1 mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "home1 mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "home2 desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "home2 desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "home2 tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "home2 tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "home2 mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "home2 mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "products desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "products desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "products tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "products tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "products mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "products mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "detail desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "detail desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "detail tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "detail tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "detail mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "detail mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "bulk desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "bulk desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "bulk tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "bulk tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "bulk mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "bulk mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "contact desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "contact desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "contact tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "contact tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "contact mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "contact mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "cart desktop no overflow",
+      "pass": true
+    },
+    {
+      "name": "cart desktop images loaded",
+      "pass": true
+    },
+    {
+      "name": "cart tablet no overflow",
+      "pass": true
+    },
+    {
+      "name": "cart tablet images loaded",
+      "pass": true
+    },
+    {
+      "name": "cart mobile no overflow",
+      "pass": true
+    },
+    {
+      "name": "cart mobile images loaded",
+      "pass": true
+    },
+    {
+      "name": "Home dropdown click",
+      "pass": true
+    },
+    {
+      "name": "Escape closes dropdown",
+      "pass": true
+    },
+    {
+      "name": "Dropdown hover",
+      "pass": true
+    },
+    {
+      "name": "Dropdown keyboard",
+      "pass": true
+    },
+    {
+      "name": "Header remains sticky",
+      "pass": true
+    },
+    {
+      "name": "Hero image and information change",
+      "pass": true
+    },
+    {
+      "name": "Anatomy updates",
+      "pass": true
+    },
+    {
+      "name": "Occasion changes collection",
+      "pass": true
+    },
+    {
+      "name": "Gift budget changes result",
+      "pass": true
+    },
+    {
+      "name": "Gift category changes result",
+      "pass": true
+    },
+    {
+      "name": "Dark mode",
+      "pass": true
+    },
+    {
+      "name": "RTL",
+      "pass": true
+    },
+    {
+      "name": "24 catalog products",
+      "pass": true
+    },
+    {
+      "name": "Category filtering",
+      "pass": true
+    },
+    {
+      "name": "Search",
+      "pass": true
+    },
+    {
+      "name": "Empty search state",
+      "pass": true
+    },
+    {
+      "name": "Sorting",
+      "pass": true
+    },
+    {
+      "name": "Cart persistence",
+      "pass": true
+    },
+    {
+      "name": "Cart subtotal",
+      "pass": true
+    },
+    {
+      "name": "Cart quantities and calculation",
+      "pass": true
+    },
+    {
+      "name": "Mobile drawer visible",
+      "pass": true
+    },
+    {
+      "name": "Mobile scroll lock",
+      "pass": true
+    },
+    {
+      "name": "Drawer closes and restores scroll",
+      "pass": true
+    },
+    {
+      "name": "Cart enquiry prefills items",
+      "pass": true
+    },
+    {
+      "name": "Enquiry review without fake submission",
+      "pass": true
+    },
+    {
+      "name": "Business fields conditional",
+      "pass": true
+    },
+    {
+      "name": "Required date has minimum",
+      "pass": true
+    },
+    {
+      "name": "Bulk enquiry review",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 320",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 360",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 390",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 430",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 640",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 768",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 820",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 1024",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 1280",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 1440",
+      "pass": true
+    },
+    {
+      "name": "Home overflow at 1920",
+      "pass": true
+    },
+    {
+      "name": "No JS exceptions",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

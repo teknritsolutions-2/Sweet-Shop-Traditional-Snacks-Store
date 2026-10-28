@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sweet-shop-traditional-snacks-store.morthalavijay142.chatgpt.site/sitemap.xml
