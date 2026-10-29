@@ -8,14 +8,25 @@ Run `python3 -m http.server 4173 --bind 127.0.0.1` from the project root, then o
 
 ## Structure
 
-- `index.html`: main homepage
-- `pages/`: second homepage, catalog, product details, bulk orders, contact, bag, and supporting pages
-- `assets/css/`: shared, dark-mode and RTL styles
-- `assets/js/`: product data and storefront behavior
-- `assets/images/`: original and prepared food photographs
-- `assets/brand/`: symbol logo and favicon
-- `documentation/`: store configuration and image source records
-- `robots.txt`, `sitemap.xml`, `.nojekyll`: search and GitHub Pages files
+```text
+Sweet-Shop-Traditional-Snacks-Store/
+├── index.html                 # only HTML page at the project root
+├── assets/
+│   ├── brand/                # SVG logo and favicon
+│   ├── css/                  # style.css, dark-mode.css, rtl.css
+│   ├── js/                   # main.js, product and storefront scripts
+│   │   └── plugins/
+│   ├── images/
+│   └── fonts/
+├── pages/                    # all other HTML pages
+├── documentation/            # configuration and photo records
+├── README.md
+├── robots.txt
+├── sitemap.xml
+└── .nojekyll                 # required by this GitHub Pages setup
+```
+
+The empty `fonts/` and `js/plugins/` directories are reserved for future assets. The SVG logo lives in `assets/brand/`; there is no dashboard or extra homepage in `pages/`.
 
 ## Content and ordering
 
