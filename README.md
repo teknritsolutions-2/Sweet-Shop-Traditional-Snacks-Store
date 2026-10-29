@@ -20,10 +20,7 @@ Sweet-Shop-Traditional-Snacks-Store/
 │   └── fonts/
 ├── pages/                    # all other HTML pages
 ├── documentation/            # configuration and photo records
-├── README.md
-├── robots.txt
-├── sitemap.xml
-└── .nojekyll                 # required by this GitHub Pages setup
+└── README.md
 ```
 
 The empty `fonts/` and `js/plugins/` directories are reserved for future assets. The SVG logo lives in `assets/brand/`; there is no dashboard or extra homepage in `pages/`.
@@ -36,4 +33,4 @@ The shopping bag is stored in the visitor's browser. The enquiry form validates 
 
 ## Hosting
 
-GitHub Pages serves the project directly from the repository root. Keep `index.html`, `pages/`, `assets/`, `robots.txt`, `sitemap.xml` and `.nojekyll` at the root. Relative links work under the GitHub Pages project path. Update sitemap URLs if the hosting domain changes.
+GitHub Pages serves the project directly from the repository root. Keep `index.html`, `pages/` and `assets/` in place. Relative links work under the GitHub Pages project path.

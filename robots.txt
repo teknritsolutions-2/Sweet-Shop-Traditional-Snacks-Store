@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://teknritsolutions-2.github.io/Sweet-Shop-Traditional-Snacks-Store/sitemap.xml
