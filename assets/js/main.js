@@ -91,7 +91,12 @@ document.addEventListener('keydown', event => {
     else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   }
 });
-document.querySelector('.back-top').addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+const backTop = document.querySelector('.back-top');
+backTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+const updateBackTop = () => backTop.classList.toggle('is-visible', scrollY >= Math.min(1000, innerHeight * 1.25));
+addEventListener('scroll', updateBackTop, { passive: true });
+addEventListener('resize', updateBackTop);
+updateBackTop();
 
 // Product switching remains exclusive to the product-first homepage.
 document.querySelectorAll('[data-hero]').forEach(button => {
