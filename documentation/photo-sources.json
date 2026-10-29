@@ -101,7 +101,7 @@
   {
     "id": 12,
     "title": "Banana chip",
-    "file": "Chips_de_bananes_de_S\u00e3o_Tom\u00e9-et-Pr\u00edncipe.jpg",
+    "file": "Chips_de_bananes_de_São_Tomé-et-Príncipe.jpg",
     "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Chips_de_bananes_de_S%C3%A3o_Tom%C3%A9-et-Pr%C3%ADncipe.jpg/1280px-Chips_de_bananes_de_S%C3%A3o_Tom%C3%A9-et-Pr%C3%ADncipe.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Chips_de_bananes_de_S%C3%A3o_Tom%C3%A9-et-Pr%C3%ADncipe.jpg",
     "licenses": [
@@ -304,5 +304,17 @@
     "source": "https://commons.wikimedia.org/wiki/File:Cashew_nuts_-_1.jpg",
     "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cashew_nuts_-_1.jpg",
     "changes": "Resized and cropped into a 4:3 catalog derivative."
+  },
+  {
+    "id": "gift-explorer-festive",
+    "file": "Assorted Sweets - Mehsana - Gujarat - 1.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Assorted_Sweets_-_Mehsana_-_Gujarat_-_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Assorted_Sweets_-_Mehsana_-_Gujarat_-_1.jpg",
+    "author": "Nizil Shah",
+    "licenses": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "local": "assets/images/gift-explorer-festive.jpg",
+    "changes": "EXIF normalized, cropped to show the open sweets box, resized to 1600 × 1200, and JPEG compressed."
   }
 ]

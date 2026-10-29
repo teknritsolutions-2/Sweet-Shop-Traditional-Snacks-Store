@@ -29,7 +29,7 @@
     document.getElementById('gift-types').textContent = product.types;
     document.getElementById('gift-price').textContent = money(product.price) + ' / ' + product.pack + ' · indicative';
     const image = document.querySelector('.gift-layout > img');
-    image.src = storePath + product.image;
+    image.src = storePath + (product.id === 19 ? "assets/images/gift-explorer-festive.jpg" : product.image);
     image.alt = product.imageAlt || product.name;
     const params = new URLSearchParams({ enquiry: 'bulk', product: product.id, occasion, quantity: quantity.value, packaging: packaging.value });
     link.href = storePath + 'pages/contact.html?' + params;
