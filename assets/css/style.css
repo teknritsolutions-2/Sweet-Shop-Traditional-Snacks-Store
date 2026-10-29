@@ -258,7 +258,8 @@ textarea { resize: vertical; }
 .detail-layout p { margin: 15px 0; }
 .detail-price { font-size: 26px; color: var(--text); }
 .detail-actions { display: flex; gap: 20px; align-items: end; margin-top: 24px; }
-.detail-actions label { max-width: 100px; }
+.detail-quantity { width: 132px; flex-shrink: 0; }
+.detail-quantity label { display: block; margin-bottom: 8px; }
 .product-guidance { border-top: 1px solid var(--border); margin-top: 28px; padding-top: 20px; }
 .related-section { padding-bottom: var(--section-space); }
 #related-products.three-products { grid-template-columns: repeat(3, minmax(0, 1fr)); }
