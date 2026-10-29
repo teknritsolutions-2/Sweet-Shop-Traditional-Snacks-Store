@@ -144,7 +144,8 @@ function check(name, pass, details) {
   await page.locator('#search').fill('no-matches');
   check('Catalog empty state', await page.locator('.empty-state').isVisible());
   await page.locator('#clear-filters').click();
-  await page.locator('#sort').selectOption('low');
+  await page.locator('#sort-trigger').click();
+  await page.getByRole('menuitemradio', { name: 'Price: low to high', exact: true }).click();
   check('Price sorting', await page.locator('.product-card h3').first().textContent() === 'Banana Chips');
   await page.locator('.product-card[data-product-id="0"] input').fill('2');
   await page.locator('.product-card[data-product-id="0"] [data-step="1"]').click();

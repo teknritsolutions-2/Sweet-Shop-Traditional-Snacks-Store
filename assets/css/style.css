@@ -569,3 +569,13 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* Sort choices stay attached to the field instead of using an OS popup. */
+.sort-picker { position: relative; margin-top: 7px; }
+.sort-picker select { margin-top: 0; }
+.sort-picker select[hidden], .sort-options[hidden] { display: none; }
+.sort-trigger { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 48px; padding: 11px 13px; border: 1px solid var(--border); border-radius: 3px; background: var(--surface); text-align: start; font-size: 15px; }
+.sort-options { position: absolute; inset-inline: 0; top: calc(100% + 6px); z-index: 20; padding: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; box-shadow: 0 8px 24px #0002; }
+.sort-options button { display: block; width: 100%; min-height: 44px; padding: 10px 8px; text-align: start; font-size: 15px; border-radius: 2px; }
+.sort-options button:hover, .sort-options button:focus-visible { background: var(--border); }
+.sort-options button[aria-checked="true"] { font-weight: 700; box-shadow: inset 3px 0 var(--gold); }
