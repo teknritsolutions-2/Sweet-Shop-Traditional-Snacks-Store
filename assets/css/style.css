@@ -313,6 +313,9 @@ summary { cursor: pointer; display: flex; align-items: center; justify-content: 
 summary::-webkit-details-marker { display: none; }
 summary span { font-size: 25px; }
 details p { padding-top: 14px; max-width: 850px; font-size: 14px; }
+.bag-page { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+.bag-page > .announcement, .bag-page > .site-header, .bag-page > main, .bag-page > footer { flex-shrink: 0; }
+.bag-page > footer { margin-top: auto; }
 .cart-section { padding-bottom: var(--section-space); }
 .cart-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 45px; }
 .cart-item { display: grid; grid-template-columns: 90px 1fr auto; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--border); }
