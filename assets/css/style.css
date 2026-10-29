@@ -67,6 +67,8 @@ p + p { margin-top: 16px; }
 .categories, .tradition, .gift-collection, .dry-collection, .occasion-story, .faq-section, .detail-section, .about-intro, .assortment-story, .texture-story, .about-gifting, .steps, .occasion-types { padding-block: var(--section-space); }
 .tradition + .anatomy-section, .dry-collection + .tradition, .tradition + .occasion-story, .assortment-story + .craft-story, .texture-story + .about-gifting { padding-top: 0; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 25px; margin-bottom: 30px; }
+.section-heading > .text-link { flex-shrink: 0; white-space: nowrap; }
+.button, .add-cart { white-space: nowrap; }
 .section-heading .eyebrow, .center-heading .eyebrow { margin-bottom: 10px; }
 .page-banner { text-align: center; padding-block: var(--compact-space); }
 .page-banner h1 { margin: 15px 0 22px; font-size: clamp(44px, 4.8vw, 68px); }
