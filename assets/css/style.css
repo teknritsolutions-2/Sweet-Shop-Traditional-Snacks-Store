@@ -186,9 +186,10 @@ p + p { margin-top: 16px; }
 .gifting-hero-panel > p:not(.eyebrow) { max-width: 400px; font-size: 17px; }
 .gifting-hero .button { margin-top: 28px; }
 .gifting-hero-photo { position: relative; padding: 15px 15px 0 0; }
-.gifting-hero-photo::before { content: ''; position: absolute; inset: 0 0 35px 35px; border: 1px solid var(--gold); z-index: -1; }
+.gifting-hero-frame { position: relative; isolation: isolate; }
+.gifting-hero-frame::before { content: ''; position: absolute; inset: -15px -15px -15px 15px; border: 1px solid var(--gold); z-index: -1; }
 .gifting-hero-photo img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 3px; }
-.gifting-hero-photo figcaption { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-top: 16px; }
+.gifting-hero-photo figcaption { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding-top: 32px; }
 .gifting-hero-photo figcaption span { font-size: 10px; letter-spacing: 1px; }
 .gifting-hero-photo figcaption a { font-size: 13px; color: var(--text); border-bottom: 1px solid var(--border); }
 
