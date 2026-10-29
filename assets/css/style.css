@@ -339,7 +339,7 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
 .footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
 .footer-logo { width: 52px; }
 .footer-brand .brand-name { font-size: 32px; }
-.footer-main h3 { font-size: 27px; margin-bottom: 14px; }
+.footer-main h3 { font-size: 20px; margin-bottom: 12px; }
 .footer-main p { color: #d1d2d8; font-size: 14px; }
 .footer-main h4 { font-size: 12px; text-transform: uppercase; letter-spacing: 1.4px; color: var(--gold); margin: 12px 0 18px; }
 .footer-main a { display: block; font-size: 14px; color: #e1e1e5; margin-top: 7px; }
@@ -425,9 +425,10 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .enquiry-section aside > p { grid-column: 1/-1; }
   .contact-note { margin-top: 0; }
   .enquiry-section aside > .text-link { justify-self: start; grid-column: 1/-1; margin-top: 0; }
-  .footer-main { grid-template-columns: 1.4fr 1fr 1fr; gap: 28px; }
-  .footer-main > div:last-child { grid-column: 1/-1; display: flex; gap: 22px; flex-wrap: wrap; align-items: center; }
-  .footer-main > div:last-child h4, .footer-main > div:last-child a { margin: 0; }
+  .footer-main { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 36px; padding-bottom: 36px; }
+  .footer-main > div:first-child { grid-column: 1/-1; }
+  .footer-brand { margin-bottom: 16px; }
+  .footer-main h4 { margin-top: 0; }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .gifting-hero { grid-template-columns: 1fr 1fr; padding-block: 36px; gap: 30px; }
