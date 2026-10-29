@@ -369,9 +369,10 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   :root { --section-space: 60px; --compact-space: 40px; --section-gap: 30px; }
   .container { width: min(1320px, calc(100% - 80px)); }
   .site-header { height: 82px; }
-  .header-inner { display: flex; gap: 18px; }
-  .menu-toggle { display: flex; order: -1; }
-  .logo { margin-inline-end: auto; }
+  .header-inner { display: flex; gap: 18px; direction: ltr; }
+  .menu-toggle { display: flex; flex-shrink: 0; }
+  .logo { margin-right: auto; }
+  html[dir="rtl"] .header-inner > * { direction: rtl; }
   .header-end .small { display: none; }
   .site-header nav { position: fixed; top: 0; bottom: 0; left: 0; width: min(370px, 88vw); background: var(--bg); z-index: 1200; transform: translateX(-110%); transition: transform .25s; display: flex; flex-direction: column; align-items: stretch; justify-content: start; padding: 85px 30px 30px; margin: 0; gap: 20px; font-size: 16px; overflow-y: auto; visibility: hidden; }
   .site-header.drawer-open nav { transform: translateX(0); visibility: visible; }
