@@ -363,6 +363,8 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .hero-intro br { display: none; }
 }
 @media (max-width: 1279px) {
+  .detail-layout { grid-template-columns: minmax(0, 1fr); }
+  .detail-layout > img { aspect-ratio: 16/9; object-fit: cover; }
   .gifting-hero { gap: 38px; }
   .gifting-hero h1 { font-size: 52px; }
   .gifting-hero-photo figcaption { align-items: start; flex-direction: column; gap: 8px; }
@@ -504,7 +506,7 @@ footer { background: var(--ink); color: white; padding-block: var(--compact-spac
   .filter-tabs { gap: 8px; }
   .filter-tabs button, .occasion-tabs button { padding: 8px 12px; }
   .detail-layout h1 { font-size: 43px; }
-  .detail-layout > img { max-height: 430px; }
+  .detail-layout > img { aspect-ratio: 4/3; max-height: 430px; }
   .gift-layout { grid-template-columns: 1fr; gap: 26px; }
 
   .gift-filters { gap: 15px; }
